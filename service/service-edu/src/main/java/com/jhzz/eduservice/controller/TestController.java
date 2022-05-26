@@ -1,5 +1,6 @@
 package com.jhzz.eduservice.controller;
 
+import com.jhzz.servicebase.exceptionhandler.GuliException;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,6 +17,11 @@ public class TestController {
 
     @RequestMapping("hello")
     public String hello() {
+        try {
+            int i = 1 / 0;
+        }catch (Exception e){
+            throw new GuliException(5001,"自定义异常");
+        }
         return "aaaaaaaaaaa";
     }
 }

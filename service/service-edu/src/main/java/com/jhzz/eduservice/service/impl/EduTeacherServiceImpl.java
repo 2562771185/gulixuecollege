@@ -27,7 +27,7 @@ public class EduTeacherServiceImpl extends ServiceImpl<EduTeacherMapper, EduTeac
         Page<EduTeacher> page = new Page(pageNum, pageSize);
         QueryWrapper<EduTeacher> queryWrapper = new QueryWrapper<>();
         //根据sort字段升序
-        queryWrapper.orderByAsc("sort");
+        queryWrapper.orderByDesc("sort");
         if (teacherQuery == null) {
             Page<EduTeacher> teacherPage = this.page(page);
             return teacherPage;

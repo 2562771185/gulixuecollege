@@ -21,6 +21,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/eduservice/teacher")
+@CrossOrigin
 @Api(tags = "讲师管理")
 public class EduTeacherController {
 
@@ -72,10 +73,17 @@ public class EduTeacherController {
     @ApiOperation("修改讲师信息")
     @ApiImplicitParam(name = "teacher", value = "讲师对象", dataType = "EduTeacher")
     public CommonResult updateTeacher(@ApiParam(value = "修改的id", required = true) @PathVariable String id, @RequestBody EduTeacher teacher) {
+        if (id == null || teacher == null){
+            return CommonResult.error().message("参数不正确");
+        }
         teacher.setId(id);
-        teacherService.updateById(teacher);
-
+        boolean update = teacherService.updateById(teacher);
+        if (update) {
         return CommonResult.ok().message("修改成功");
+
+        }
+        return CommonResult.error().message("修改失败");
+
     }
 
     @GetMapping("getTeacher/{id}")
