@@ -37,7 +37,7 @@ public class LoginController {
         System.out.println("token = " + token);
         return CommonResult.ok().data("name","超级管理员").data("avatar","https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif");
     }
-    @GetMapping("logout")
+    @PostMapping("logout")
     public CommonResult logout(){
         return CommonResult.ok().data("token","");
     }

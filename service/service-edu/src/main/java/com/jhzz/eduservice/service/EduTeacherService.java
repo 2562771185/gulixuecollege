@@ -3,6 +3,7 @@ package com.jhzz.eduservice.service;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.jhzz.commonutils.CommonResult;
 import com.jhzz.eduservice.entity.EduTeacher;
 import com.jhzz.eduservice.query.TeacherQuery;
 
@@ -13,4 +14,6 @@ import com.jhzz.eduservice.query.TeacherQuery;
 */
 public interface EduTeacherService extends IService<EduTeacher> {
     Page<EduTeacher> findPageTeachers(Long pageNum, Long pageSize, TeacherQuery teacherQuery);
+
+    CommonResult getNameList();
 }

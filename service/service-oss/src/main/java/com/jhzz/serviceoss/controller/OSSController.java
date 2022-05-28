@@ -23,8 +23,8 @@ public class OSSController {
     private OssService ossService;
 
     @PostMapping("/upload")
-    public CommonResult uploadFile(MultipartFile file) {
-        String url = ossService.uploadFile(file);
+    public CommonResult uploadFile(MultipartFile file, @RequestParam("host") String host) {
+        String url = ossService.uploadFile(file,host);
         return CommonResult.ok().data("url",url);
     }
     @PostMapping("/delete")

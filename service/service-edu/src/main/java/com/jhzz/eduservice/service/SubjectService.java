@@ -14,4 +14,6 @@ import org.springframework.web.multipart.MultipartFile;
 public interface SubjectService extends IService<Subject> {
 
     CommonResult addSubject(MultipartFile file,SubjectService subjectService);
+
+    CommonResult getSubjectList();
 }

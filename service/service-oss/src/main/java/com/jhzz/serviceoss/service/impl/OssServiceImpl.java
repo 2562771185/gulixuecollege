@@ -10,7 +10,6 @@ import org.joda.time.DateTime;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -27,7 +26,7 @@ import java.util.UUID;
 @Service
 public class OssServiceImpl implements OssService {
     @Override
-    public String uploadFile(MultipartFile file) {
+    public String uploadFile(MultipartFile file, String host) {
         String endpoint = ConstantPropertiesUtil.END_POINT;
         String accessKeyId = ConstantPropertiesUtil.ACCESS_KEY_ID;
         String accessKeySecret = ConstantPropertiesUtil.ACCESS_KEY_SECRET;
@@ -43,7 +42,7 @@ public class OssServiceImpl implements OssService {
         String fileName = UUID.randomUUID().toString();
         String fileType = original.substring(original.lastIndexOf("."));
         String newName = fileName + fileType;
-        String fileUrl = fileHost + "/" + filePath + "/" + newName;
+        String fileUrl = fileHost + host + "/" + filePath + "/" + newName;
 
         // 创建OSSClient实例。
         OSS ossClient = new OSSClientBuilder().build(endpoint, accessKeyId, accessKeySecret);
@@ -78,7 +77,8 @@ public class OssServiceImpl implements OssService {
 
     @Override
     public void deleteFile(String fileName) {
-        if (fileName == null || fileName.isEmpty()){
+        System.out.println("fileName = " + fileName);
+        if (fileName == null || fileName.isEmpty()) {
             return;
         }
         String endpoint = ConstantPropertiesUtil.END_POINT;
@@ -96,7 +96,7 @@ public class OssServiceImpl implements OssService {
         try {
             // 删除文件或目录。如果要删除目录，目录必须为空。
             ossClient.deleteObject(bucketName, deleteFile);
-        } catch (Exception e){
+        } catch (Exception e) {
             System.out.println("阿里云oss出错");
             e.printStackTrace();
         } finally {
@@ -107,7 +107,7 @@ public class OssServiceImpl implements OssService {
     }
 
     public static void main(String[] args) {
-      String str1  = "https://huanzhi.oss-cn-shenzhen.aliyuncs.com/guli/avatar/2022/05/26/159f3d96-20c7-4a73-be95-92ae060a6a53.jpg";
+        String str1 = "https://huanzhi.oss-cn-shenzhen.aliyuncs.com/guli/avatar/2022/05/26/159f3d96-20c7-4a73-be95-92ae060a6a53.jpg";
         String substring =
                 str1.substring(46);
         System.out.println("substring = " + substring);

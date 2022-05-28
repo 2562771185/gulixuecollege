@@ -3,14 +3,20 @@ package com.jhzz.eduservice.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.jhzz.commonutils.CommonResult;
 import com.jhzz.eduservice.entity.EduTeacher;
+import com.jhzz.eduservice.entity.vo.TeacherListVo;
 import com.jhzz.eduservice.query.TeacherQuery;
 import com.jhzz.eduservice.service.EduTeacherService;
 
 import com.jhzz.eduservice.mapper.EduTeacherMapper;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author Huanzhi
@@ -53,6 +59,29 @@ public class EduTeacherServiceImpl extends ServiceImpl<EduTeacherMapper, EduTeac
         }
         return this.page(page,queryWrapper);
     }
+
+    @Override
+    public CommonResult getNameList() {
+        List<EduTeacher> list = this.list();
+        List<TeacherListVo> vos = copyList(list);
+        return CommonResult.ok().data("list",vos);
+    }
+
+    private List<TeacherListVo> copyList(List<EduTeacher> list) {
+        List<TeacherListVo> vos = new ArrayList<>();
+        for (EduTeacher eduTeacher : list) {
+            vos.add(copyOne(eduTeacher));
+        }
+        return vos;
+    }
+
+    private TeacherListVo copyOne(EduTeacher eduTeacher) {
+        TeacherListVo vo = new TeacherListVo();
+        BeanUtils.copyProperties(eduTeacher, vo);
+        return vo;
+    }
+
+
 }
 
 

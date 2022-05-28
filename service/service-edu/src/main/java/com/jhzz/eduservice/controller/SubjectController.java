@@ -2,9 +2,7 @@ package com.jhzz.eduservice.controller;
 
 import com.jhzz.commonutils.CommonResult;
 import com.jhzz.eduservice.service.SubjectService;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
@@ -19,6 +17,7 @@ import javax.annotation.Resource;
  */
 @RestController
 @RequestMapping("eduservice/subject")
+@CrossOrigin
 public class SubjectController {
     @Resource
     private SubjectService subjectService;
@@ -30,5 +29,14 @@ public class SubjectController {
     public CommonResult addSubject(MultipartFile file) {
         //上传过来的excel文件
         return subjectService.addSubject(file,subjectService);
+    }
+
+    /**
+     * 获取课程分类及对应的子类
+     * @return
+     */
+    @GetMapping("getSubjectList")
+    public CommonResult getSubjectList() {
+        return subjectService.getSubjectList();
     }
 }

@@ -12,7 +12,6 @@ import org.apache.ibatis.annotations.Mapper;
 * @Entity generat.domain.EduTeacher
 */
 @Mapper
-
 public interface EduTeacherMapper extends BaseMapper<EduTeacher> {
 
 }

@@ -92,6 +92,9 @@ public class EduTeacherController {
         EduTeacher teacher = teacherService.getById(id);
         return CommonResult.ok().data("teacher",teacher);
     }
-
-
+    @GetMapping("getNameList")
+    @ApiOperation("获取讲师列表只包含姓名和id")
+    public CommonResult getNameList() {
+        return  teacherService.getNameList();
+    }
 }
