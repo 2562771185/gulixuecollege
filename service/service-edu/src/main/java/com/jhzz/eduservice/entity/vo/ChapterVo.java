@@ -1,5 +1,6 @@
-package com.jhzz.eduservice.entity.chapter;
+package com.jhzz.eduservice.entity.vo;
 
+import com.jhzz.eduservice.entity.vo.VideoVo;
 import lombok.Data;
 
 import java.io.Serializable;

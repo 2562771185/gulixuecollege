@@ -21,7 +21,7 @@ public class GlobalExceptionHandler {
     @ResponseBody
     public CommonResult error(Exception e){
         e.printStackTrace();
-        return CommonResult.error().message("全局异常处理");
+        return CommonResult.error().message("出错了(#^.^#)请联系管理员");
     }
     @ExceptionHandler(GuliException.class)
     @ResponseBody

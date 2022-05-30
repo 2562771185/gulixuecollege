@@ -2,6 +2,7 @@ package com.jhzz.eduservice.controller;
 
 import com.jhzz.commonutils.CommonResult;
 import com.jhzz.eduservice.entity.param.LoginParam;
+import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("eduservice/user")
 @CrossOrigin
+@Api(tags = "登录管理")
 public class LoginController {
 
     /**

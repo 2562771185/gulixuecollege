@@ -2,6 +2,7 @@ package com.jhzz.eduservice.controller;
 
 import com.jhzz.commonutils.CommonResult;
 import com.jhzz.eduservice.service.SubjectService;
+import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -18,6 +19,7 @@ import javax.annotation.Resource;
 @RestController
 @RequestMapping("eduservice/subject")
 @CrossOrigin
+@Api(tags = "课程分类管理")
 public class SubjectController {
     @Resource
     private SubjectService subjectService;
@@ -39,4 +41,5 @@ public class SubjectController {
     public CommonResult getSubjectList() {
         return subjectService.getSubjectList();
     }
+
 }

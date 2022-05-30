@@ -1,0 +1,14 @@
+2022-05-29 01:21:22.330 [http-nio-8001-exec-6] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.jhzz.eduservice.mapper]' package. Please check your configuration.
+2022-05-29 12:39:21.247 [http-nio-8001-exec-1] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.jhzz.eduservice.mapper]' package. Please check your configuration.
+2022-05-29 12:42:25.149 [http-nio-8001-exec-2] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.jhzz.eduservice.mapper]' package. Please check your configuration.
+2022-05-29 12:42:40.473 [http-nio-8001-exec-1] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.jhzz.eduservice.mapper]' package. Please check your configuration.
+2022-05-29 13:11:39.042 [http-nio-8001-exec-3] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.jhzz.eduservice.mapper]' package. Please check your configuration.
+2022-05-29 13:18:38.158 [http-nio-8001-exec-7] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.jhzz.eduservice.mapper]' package. Please check your configuration.
+2022-05-29 13:18:53.524 [http-nio-8001-exec-10] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.jhzz.eduservice.mapper]' package. Please check your configuration.
+2022-05-29 13:35:09.736 [http-nio-8001-exec-7] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.jhzz.eduservice.mapper]' package. Please check your configuration.
+2022-05-29 14:33:32.050 [http-nio-8001-exec-9] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.jhzz.eduservice.mapper]' package. Please check your configuration.
+2022-05-29 14:34:08.835 [http-nio-8001-exec-1] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.jhzz.eduservice.mapper]' package. Please check your configuration.
+2022-05-29 15:49:37.472 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=44m27s398ms698µs400ns).
+2022-05-29 16:30:26.291 [http-nio-8001-exec-2] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.jhzz.eduservice.mapper]' package. Please check your configuration.
+2022-05-29 17:22:46.592 [http-nio-8001-exec-2] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.jhzz.eduservice.mapper]' package. Please check your configuration.
+2022-05-29 17:31:13.840 [http-nio-8001-exec-10] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.jhzz.eduservice.mapper]' package. Please check your configuration.

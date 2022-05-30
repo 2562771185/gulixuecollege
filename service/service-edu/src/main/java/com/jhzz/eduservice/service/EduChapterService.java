@@ -1,8 +1,9 @@
 package com.jhzz.eduservice.service;
 
+import com.jhzz.commonutils.CommonResult;
 import com.jhzz.eduservice.entity.EduChapter;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.jhzz.eduservice.entity.chapter.ChapterVo;
+import com.jhzz.eduservice.entity.vo.ChapterVo;
 
 import java.util.List;
 
@@ -14,4 +15,7 @@ import java.util.List;
 public interface EduChapterService extends IService<EduChapter> {
 
     List<ChapterVo> findChapterVideoByCourseId(String courseId);
+
+    CommonResult deleteChapter(String chapterId);
+
 }

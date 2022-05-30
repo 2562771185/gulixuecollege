@@ -1,6 +1,7 @@
 package com.jhzz.eduservice.controller;
 
 import com.jhzz.servicebase.exceptionhandler.GuliException;
+import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * \
  */
 @RestController
+@Api(tags = "测试")
 public class TestController {
 
     @RequestMapping("hello")

@@ -1,0 +1,4 @@
+2022-05-29 11:08:01.637 [http-nio-8001-exec-2] ERROR c.j.s.exceptionhandler.GlobalExceptionHandler - null
+2022-05-29 11:08:48.809 [http-nio-8001-exec-5] ERROR c.j.s.exceptionhandler.GlobalExceptionHandler - null
+2022-05-29 11:15:14.395 [http-nio-8001-exec-4] ERROR c.j.s.exceptionhandler.GlobalExceptionHandler - null
+2022-05-29 11:17:16.838 [http-nio-8001-exec-8] ERROR c.j.s.exceptionhandler.GlobalExceptionHandler - null

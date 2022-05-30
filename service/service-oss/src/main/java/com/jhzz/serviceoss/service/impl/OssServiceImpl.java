@@ -42,7 +42,8 @@ public class OssServiceImpl implements OssService {
         String fileName = UUID.randomUUID().toString();
         String fileType = original.substring(original.lastIndexOf("."));
         String newName = fileName + fileType;
-        String fileUrl = fileHost + host + "/" + filePath + "/" + newName;
+        String fileUrl = fileHost+"/" + host + "/" + filePath + "/" + newName;
+
 
         // 创建OSSClient实例。
         OSS ossClient = new OSSClientBuilder().build(endpoint, accessKeyId, accessKeySecret);

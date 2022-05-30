@@ -4,6 +4,7 @@ import com.jhzz.commonutils.CommonResult;
 import com.jhzz.eduservice.entity.EduCourse;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.jhzz.eduservice.entity.vo.CourseInfoVo;
+import com.jhzz.eduservice.query.CourseQuery;
 
 /**
 * @author Huanzhi
@@ -13,4 +14,10 @@ import com.jhzz.eduservice.entity.vo.CourseInfoVo;
 public interface EduCourseService extends IService<EduCourse> {
 
     CommonResult addCourseInfo(CourseInfoVo courseInfoVo);
+
+    CommonResult getInfoById(String id);
+
+    CommonResult getCoursePage(Long pageNum, Long pageSize, CourseQuery courseQuery);
+
+    CommonResult publishCourse(String courseId);
 }
