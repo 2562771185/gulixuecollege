@@ -45,4 +45,24 @@ public class EduCourseController {
     public CommonResult publishCourse(@PathVariable String courseId){
         return courseService.publishCourse(courseId);
     }
+
+    /**
+     * 根据id删除课程相关信息
+     * @param courseId 课程id
+     * @return
+     */
+    @DeleteMapping("deleteCourse/{courseId}")
+    public CommonResult deleteCourse(@PathVariable String courseId){
+        return courseService.deleteCourse(courseId);
+    }
+
+    /**
+     * 下架课程
+     * @param courseId
+     * @return
+     */
+    @PutMapping("soldCourse/{courseId}")
+    public CommonResult soldCourse(@PathVariable String courseId){
+        return courseService.soldCourse(courseId);
+    }
 }

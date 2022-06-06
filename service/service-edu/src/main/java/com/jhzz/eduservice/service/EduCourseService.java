@@ -20,4 +20,8 @@ public interface EduCourseService extends IService<EduCourse> {
     CommonResult getCoursePage(Long pageNum, Long pageSize, CourseQuery courseQuery);
 
     CommonResult publishCourse(String courseId);
+
+    CommonResult deleteCourse(String courseId);
+
+    CommonResult soldCourse(String courseId);
 }

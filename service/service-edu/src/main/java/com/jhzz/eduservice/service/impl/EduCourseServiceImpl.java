@@ -6,21 +6,18 @@ import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.jhzz.commonutils.CommonResult;
-import com.jhzz.eduservice.entity.EduCourse;
-import com.jhzz.eduservice.entity.EduCourseDescription;
-import com.jhzz.eduservice.entity.EduTeacher;
+import com.jhzz.eduservice.entity.*;
 import com.jhzz.eduservice.entity.vo.CourseInfoVo;
 import com.jhzz.eduservice.query.CourseQuery;
-import com.jhzz.eduservice.service.EduCourseDescriptionService;
-import com.jhzz.eduservice.service.EduCourseService;
+import com.jhzz.eduservice.service.*;
 import com.jhzz.eduservice.mapper.EduCourseMapper;
-import com.jhzz.eduservice.service.EduTeacherService;
-import com.jhzz.eduservice.service.SubjectService;
 import com.jhzz.servicebase.exceptionhandler.GuliException;
 import lombok.extern.slf4j.Slf4j;
+import org.hibernate.validator.constraints.br.CPF;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.lang.reflect.Field;
@@ -33,6 +30,7 @@ import java.util.List;
  */
 @Service
 @Slf4j
+@Transactional(rollbackFor = Exception.class)
 public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse>
         implements EduCourseService {
 
@@ -42,6 +40,10 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
     private EduTeacherService teacherService;
     @Resource
     private SubjectService subjectService;
+    @Resource
+    private EduChapterService chapterService;
+    @Resource
+    private EduVideoService videoService;
     public static final String COURSE_STATUS = "Normal";
 
     @Override
@@ -95,6 +97,9 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
     @Override
     public CommonResult getInfoById(String id) {
         EduCourse eduCourse = this.getById(id);
+        if (eduCourse == null){
+            return CommonResult.error("id不合法");
+        }
         CourseInfoVo vo = new CourseInfoVo();
         BeanUtils.copyProperties(eduCourse, vo);
         EduCourseDescription description = courseDescriptionService.getById(eduCourse.getId());
@@ -151,6 +156,35 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
             return CommonResult.ok();
         }
         return CommonResult.error();
+    }
+
+    @Override
+    public CommonResult deleteCourse(String courseId) {
+        //1.删除章节和章节中的小节
+        videoService.removeVideoByCourseId(courseId);
+        log.info("删除小节成功");
+        chapterService.remove(new QueryWrapper<EduChapter>().eq("course_id", courseId));
+        log.info("删除章节成功");
+        //2.删除课程描述
+        courseDescriptionService.remove(new QueryWrapper<EduCourseDescription>().eq("id", courseId));
+        log.info("删除课程描述成功");
+        //3.删除课程本体
+        this.removeById(courseId);
+
+        log.info("删除课程本体成功");
+        return CommonResult.ok("删除课程成功");
+    }
+
+    @Override
+    public CommonResult soldCourse(String courseId) {
+        UpdateWrapper<EduCourse> updateWrapper = new UpdateWrapper<>();
+        updateWrapper.eq("id", courseId);
+        updateWrapper.set("status", "Draft");
+        boolean update = this.update(updateWrapper);
+        if (update) {
+            return CommonResult.ok("下架成功");
+        }
+        return CommonResult.error("下架失败");
     }
 
 

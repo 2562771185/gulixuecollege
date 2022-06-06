@@ -1,0 +1,11 @@
+2022-05-31 15:28:44.029 [http-nio-8001-exec-4] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.jhzz.eduservice.mapper]' package. Please check your configuration.
+2022-05-31 15:31:49.644 [http-nio-8001-exec-3] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.jhzz.eduservice.mapper]' package. Please check your configuration.
+2022-05-31 15:45:39.158 [http-nio-8001-exec-9] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.jhzz.eduservice.mapper]' package. Please check your configuration.
+2022-05-31 15:54:46.532 [http-nio-8001-exec-5] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.jhzz.eduservice.mapper]' package. Please check your configuration.
+2022-05-31 15:59:14.691 [http-nio-8001-exec-1] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.jhzz.eduservice.mapper]' package. Please check your configuration.
+2022-05-31 16:00:35.188 [http-nio-8001-exec-9] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.jhzz.eduservice.mapper]' package. Please check your configuration.
+2022-05-31 16:07:00.048 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m26s84ms859µs200ns).
+2022-05-31 18:07:46.319 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h45m46s10ms165µs800ns).
+2022-05-31 19:32:24.238 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h2m37s558ms424µs900ns).
+2022-05-31 21:06:38.781 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=27m13s732ms632µs200ns).
+2022-05-31 23:16:36.526 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=24m26s246ms255µs500ns).

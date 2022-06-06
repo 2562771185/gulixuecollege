@@ -1,0 +1,188 @@
+2022-05-31 14:48:40.963 [main] INFO  com.jhzz.eduservice.EduApplication - Starting EduApplication on JHZZ-PC with PID 14136 (D:\Code\guli-College\gulixuecollege\service\service-edu\target\classes started by Huanzhi in D:\Code\guli-College\gulixuecollege)
+2022-05-31 14:48:40.969 [main] INFO  com.jhzz.eduservice.EduApplication - The following profiles are active: dev
+2022-05-31 14:48:42.486 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-31 14:48:42.491 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-05-31 14:48:42.582 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48ms. Found 0 repository interfaces.
+2022-05-31 14:48:42.981 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-31 14:48:43.471 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2022-05-31 14:48:43.498 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2022-05-31 14:48:43.498 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-31 14:48:43.499 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2022-05-31 14:48:43.635 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-05-31 14:48:43.635 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2590 ms
+2022-05-31 14:48:45.132 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-05-31 14:48:45.246 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-31 14:48:45.790 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-05-31 14:48:45.812 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-05-31 14:48:45.849 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-05-31 14:48:46.092 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2022-05-31 14:48:46.121 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2022-05-31 14:48:46.124 [main] INFO  com.jhzz.eduservice.EduApplication - Started EduApplication in 6.434 seconds (JVM running for 10.207)
+2022-05-31 14:48:46.424 [http-nio-8001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-31 14:48:46.424 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-05-31 14:48:46.430 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2022-05-31 14:49:00.740 [http-nio-8001-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-05-31 14:50:54.211 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-31 14:50:57.172 [main] INFO  com.jhzz.eduservice.EduApplication - Starting EduApplication on JHZZ-PC with PID 4600 (D:\Code\guli-College\gulixuecollege\service\service-edu\target\classes started by Huanzhi in D:\Code\guli-College\gulixuecollege)
+2022-05-31 14:50:57.175 [main] INFO  com.jhzz.eduservice.EduApplication - The following profiles are active: dev
+2022-05-31 14:50:57.773 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-31 14:50:57.775 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-05-31 14:50:57.798 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2022-05-31 14:50:57.987 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-31 14:50:58.136 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2022-05-31 14:50:58.142 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2022-05-31 14:50:58.143 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-31 14:50:58.143 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2022-05-31 14:50:58.202 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-05-31 14:50:58.202 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 988 ms
+2022-05-31 14:50:59.107 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-05-31 14:50:59.183 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-31 14:50:59.566 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-05-31 14:50:59.577 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-05-31 14:50:59.600 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-05-31 14:50:59.744 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2022-05-31 14:50:59.761 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2022-05-31 14:50:59.763 [main] INFO  com.jhzz.eduservice.EduApplication - Started EduApplication in 2.917 seconds (JVM running for 3.571)
+2022-05-31 14:52:34.700 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-31 14:52:40.119 [main] INFO  com.jhzz.eduservice.EduApplication - Starting EduApplication on JHZZ-PC with PID 19772 (D:\Code\guli-College\gulixuecollege\service\service-edu\target\classes started by Huanzhi in D:\Code\guli-College\gulixuecollege)
+2022-05-31 14:52:40.122 [main] INFO  com.jhzz.eduservice.EduApplication - The following profiles are active: dev
+2022-05-31 14:52:41.241 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-31 14:52:41.245 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-05-31 14:52:41.310 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32ms. Found 0 repository interfaces.
+2022-05-31 14:52:41.686 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-31 14:52:42.153 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2022-05-31 14:52:42.181 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2022-05-31 14:52:42.181 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-31 14:52:42.182 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2022-05-31 14:52:42.330 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-05-31 14:52:42.330 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2155 ms
+2022-05-31 14:52:43.714 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-05-31 14:52:43.831 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-31 14:52:44.384 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-05-31 14:52:44.404 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-05-31 14:52:44.439 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-05-31 14:52:44.679 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2022-05-31 14:52:44.707 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2022-05-31 14:52:44.710 [main] INFO  com.jhzz.eduservice.EduApplication - Started EduApplication in 5.605 seconds (JVM running for 8.792)
+2022-05-31 14:53:01.703 [http-nio-8001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-31 14:53:01.703 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-05-31 14:53:01.710 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2022-05-31 14:53:02.139 [http-nio-8001-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-05-31 14:53:02.828 [http-nio-8001-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-05-31 15:06:23.028 [http-nio-8001-exec-5] INFO  c.j.eduservice.service.impl.EduCourseServiceImpl - courseInfoVo = CourseInfoVo(id=1531302482870878210, teacherId=1192249914833055746, teacherName=李四, subjectId=1530054257358770178, subjectName=Redis, subjectParentId=1530054256184365058, subjectParentName=数据库, title=完整发布流程22222, price=888, lessonNum=12, cover=http://huanzhi.oss-cn-shenzhen.aliyuncs.com/guli/cover/2022/05/30/5f4fbaa8-19d7-48b5-9264-d2ca5b65e1c3.jpg, description=完整发布流程完整发布流程完整发布流程)
+2022-05-31 15:06:34.713 [http-nio-8001-exec-7] INFO  c.jhzz.eduservice.controller.EduChapterController - chapter:EduChapter(id=, courseId=1531302482870878210, title=第一座, sort=0, gmtCreate=null, gmtModified=null)
+2022-05-31 15:28:43.997 [http-nio-8001-exec-4] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-05-31 15:28:44.014 [http-nio-8001-exec-4] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2022-05-31 15:28:44.163 [http-nio-8001-exec-8] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-05-31 15:28:44.447 [http-nio-8001-exec-2] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-05-31 15:28:44.461 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addChapterUsingPOST_1
+2022-05-31 15:28:44.465 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteChapterUsingDELETE_1
+2022-05-31 15:28:44.468 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: findChapterInfoUsingGET_1
+2022-05-31 15:28:44.470 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: findChapterVideoUsingGET_1
+2022-05-31 15:28:44.472 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateChapterUsingPOST_1
+2022-05-31 15:28:44.476 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addCourseInfoUsingPOST_1
+2022-05-31 15:28:44.480 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getCoursePageUsingPOST_1
+2022-05-31 15:28:44.482 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getInfoByIdUsingGET_1
+2022-05-31 15:28:44.484 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: publishCourseUsingGET_1
+2022-05-31 15:28:44.487 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateCourseInfoUsingPOST_1
+2022-05-31 15:28:44.492 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addTeacherUsingPOST_1
+2022-05-31 15:28:44.498 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteEduTeacherUsingDELETE_1
+2022-05-31 15:28:44.502 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: findTeacherUsingGET_1
+2022-05-31 15:28:44.504 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getEduTeacherListUsingGET_1
+2022-05-31 15:28:44.507 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNameListUsingGET_1
+2022-05-31 15:28:44.511 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageTeacherUsingPOST_1
+2022-05-31 15:28:44.515 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateTeacherUsingPOST_1
+2022-05-31 15:28:44.518 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addVideoUsingPOST_1
+2022-05-31 15:28:44.519 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteVideoUsingDELETE_1
+2022-05-31 15:28:44.521 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getVideoUsingGET_1
+2022-05-31 15:28:44.522 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateVideoUsingPOST_1
+2022-05-31 15:28:44.524 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: findUserInfoByTokenUsingGET_1
+2022-05-31 15:28:44.526 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_1
+2022-05-31 15:28:44.527 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: logoutUsingPOST_1
+2022-05-31 15:28:44.528 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addSubjectUsingPOST_1
+2022-05-31 15:28:44.529 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getSubjectListUsingGET_1
+2022-05-31 15:28:44.530 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: helloUsingGET_1
+2022-05-31 15:28:44.531 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: helloUsingHEAD_1
+2022-05-31 15:28:44.532 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: helloUsingPOST_1
+2022-05-31 15:28:44.533 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: helloUsingPUT_1
+2022-05-31 15:28:44.533 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: helloUsingPATCH_1
+2022-05-31 15:28:44.534 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: helloUsingDELETE_1
+2022-05-31 15:28:44.534 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: helloUsingOPTIONS_1
+2022-05-31 15:28:44.535 [http-nio-8001-exec-2] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: helloUsingTRACE_1
+2022-05-31 15:31:49.631 [http-nio-8001-exec-3] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-05-31 15:31:49.636 [http-nio-8001-exec-3] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2022-05-31 15:31:49.892 [http-nio-8001-exec-9] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-05-31 15:31:49.896 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addChapterUsingPOST_2
+2022-05-31 15:31:49.898 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteChapterUsingDELETE_2
+2022-05-31 15:31:49.899 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: findChapterInfoUsingGET_2
+2022-05-31 15:31:49.900 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: findChapterVideoUsingGET_2
+2022-05-31 15:31:49.901 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateChapterUsingPOST_2
+2022-05-31 15:31:49.902 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addCourseInfoUsingPOST_2
+2022-05-31 15:31:49.903 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteCourseUsingDELETE_1
+2022-05-31 15:31:49.905 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getCoursePageUsingPOST_2
+2022-05-31 15:31:49.906 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getInfoByIdUsingGET_2
+2022-05-31 15:31:49.907 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: publishCourseUsingGET_2
+2022-05-31 15:31:49.908 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateCourseInfoUsingPOST_2
+2022-05-31 15:31:49.912 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addTeacherUsingPOST_2
+2022-05-31 15:31:49.915 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteEduTeacherUsingDELETE_2
+2022-05-31 15:31:49.918 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: findTeacherUsingGET_2
+2022-05-31 15:31:49.920 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getEduTeacherListUsingGET_2
+2022-05-31 15:31:49.922 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNameListUsingGET_2
+2022-05-31 15:31:49.925 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageTeacherUsingPOST_2
+2022-05-31 15:31:49.928 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateTeacherUsingPOST_2
+2022-05-31 15:31:49.930 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addVideoUsingPOST_2
+2022-05-31 15:31:49.931 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteVideoUsingDELETE_2
+2022-05-31 15:31:49.931 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getVideoUsingGET_2
+2022-05-31 15:31:49.933 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateVideoUsingPOST_2
+2022-05-31 15:31:49.934 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: findUserInfoByTokenUsingGET_2
+2022-05-31 15:31:49.935 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_2
+2022-05-31 15:31:49.936 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: logoutUsingPOST_2
+2022-05-31 15:31:49.937 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addSubjectUsingPOST_2
+2022-05-31 15:31:49.938 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getSubjectListUsingGET_2
+2022-05-31 15:31:49.939 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: helloUsingGET_2
+2022-05-31 15:31:49.939 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: helloUsingHEAD_2
+2022-05-31 15:31:49.940 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: helloUsingPOST_2
+2022-05-31 15:31:49.940 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: helloUsingPUT_2
+2022-05-31 15:31:49.941 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: helloUsingPATCH_2
+2022-05-31 15:31:49.941 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: helloUsingDELETE_2
+2022-05-31 15:31:49.942 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: helloUsingOPTIONS_2
+2022-05-31 15:31:49.942 [http-nio-8001-exec-9] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: helloUsingTRACE_2
+2022-05-31 15:34:41.053 [http-nio-8001-exec-3] INFO  c.j.eduservice.service.impl.EduCourseServiceImpl - 删除小节成功
+2022-05-31 15:34:41.139 [http-nio-8001-exec-3] INFO  c.j.eduservice.service.impl.EduCourseServiceImpl - 删除章节成功
+2022-05-31 15:34:41.222 [http-nio-8001-exec-3] INFO  c.j.eduservice.service.impl.EduCourseServiceImpl - 删除课程描述成功
+2022-05-31 15:34:41.319 [http-nio-8001-exec-3] INFO  c.j.eduservice.service.impl.EduCourseServiceImpl - 删除课程本体成功
+2022-05-31 15:45:39.142 [http-nio-8001-exec-9] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-05-31 15:45:39.149 [http-nio-8001-exec-9] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+2022-05-31 15:45:39.212 [http-nio-8001-exec-10] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-05-31 15:54:46.515 [http-nio-8001-exec-5] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-05-31 15:54:46.524 [http-nio-8001-exec-5] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+2022-05-31 15:55:04.824 [http-nio-8001-exec-4] INFO  c.j.eduservice.service.impl.EduCourseServiceImpl - 删除小节成功
+2022-05-31 15:56:13.854 [http-nio-8001-exec-8] INFO  c.j.eduservice.service.impl.EduCourseServiceImpl - 删除小节成功
+2022-05-31 15:59:14.678 [http-nio-8001-exec-1] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-05-31 15:59:14.684 [http-nio-8001-exec-1] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2022-05-31 15:59:16.278 [http-nio-8001-exec-10] INFO  c.j.eduservice.service.impl.EduCourseServiceImpl - 删除小节成功
+2022-05-31 15:59:16.431 [http-nio-8001-exec-10] INFO  c.j.eduservice.service.impl.EduCourseServiceImpl - 删除课程描述成功
+2022-05-31 15:59:16.507 [http-nio-8001-exec-10] INFO  c.j.eduservice.service.impl.EduCourseServiceImpl - 删除课程本体成功
+2022-05-31 16:00:35.176 [http-nio-8001-exec-9] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-05-31 16:00:35.180 [http-nio-8001-exec-9] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3ms. Found 0 repository interfaces.
+2022-05-31 16:01:20.360 [http-nio-8001-exec-3] INFO  c.j.eduservice.service.impl.EduCourseServiceImpl - 删除小节成功
+2022-05-31 16:01:20.520 [http-nio-8001-exec-3] INFO  c.j.eduservice.service.impl.EduCourseServiceImpl - 删除课程描述成功
+2022-05-31 16:01:20.601 [http-nio-8001-exec-3] INFO  c.j.eduservice.service.impl.EduCourseServiceImpl - 删除课程本体成功
+2022-05-31 16:01:58.885 [http-nio-8001-exec-1] INFO  c.j.eduservice.service.impl.EduCourseServiceImpl - 删除小节成功
+2022-05-31 16:01:59.045 [http-nio-8001-exec-1] INFO  c.j.eduservice.service.impl.EduCourseServiceImpl - 删除课程描述成功
+2022-05-31 16:01:59.125 [http-nio-8001-exec-1] INFO  c.j.eduservice.service.impl.EduCourseServiceImpl - 删除课程本体成功
+2022-05-31 16:02:16.390 [http-nio-8001-exec-7] INFO  c.j.eduservice.service.impl.EduCourseServiceImpl - 删除小节成功
+2022-05-31 16:02:16.557 [http-nio-8001-exec-7] INFO  c.j.eduservice.service.impl.EduCourseServiceImpl - 删除课程描述成功
+2022-05-31 16:02:16.641 [http-nio-8001-exec-7] INFO  c.j.eduservice.service.impl.EduCourseServiceImpl - 删除课程本体成功
+2022-05-31 16:03:15.214 [http-nio-8001-exec-3] INFO  c.j.eduservice.service.impl.EduCourseServiceImpl - 删除小节成功
+2022-05-31 16:03:15.365 [http-nio-8001-exec-3] INFO  c.j.eduservice.service.impl.EduCourseServiceImpl - 删除课程描述成功
+2022-05-31 16:03:15.440 [http-nio-8001-exec-3] INFO  c.j.eduservice.service.impl.EduCourseServiceImpl - 删除课程本体成功
+2022-05-31 19:34:03.601 [http-nio-8001-exec-5] INFO  c.j.eduservice.service.impl.EduCourseServiceImpl - 删除小节成功
+2022-05-31 19:34:03.748 [http-nio-8001-exec-5] INFO  c.j.eduservice.service.impl.EduCourseServiceImpl - 删除课程描述成功
+2022-05-31 19:34:03.821 [http-nio-8001-exec-5] INFO  c.j.eduservice.service.impl.EduCourseServiceImpl - 删除课程本体成功
+2022-05-31 19:37:13.061 [http-nio-8001-exec-8] INFO  c.j.eduservice.service.impl.EduCourseServiceImpl - courseInfoVo = CourseInfoVo(id=null, teacherId=1530148345516965890, teacherName=null, subjectId=1530054252661149697, subjectName=null, subjectParentId=1530054252174610433, subjectParentName=null, title=Vue.js 教程, price=299, lessonNum=20, cover=http://huanzhi.oss-cn-shenzhen.aliyuncs.com/guli/avatar/cover/2022/05/31/5c14a6c8-4c92-4e9b-8348-d54b2bc68228.jpg, description=Webpack 入门教程：http://www.runoob.com/w3cnote/webpack-tutorial.html
+
+官方文档：http://vuejs.org/v2/guide/syntax.html
+
+中文文档: https://cn.vuejs.org/v2/guide/syntax.html)
+2022-05-31 19:37:29.502 [http-nio-8001-exec-2] INFO  c.jhzz.eduservice.controller.EduChapterController - chapter:EduChapter(id=, courseId=1531600682232086530, title=Vue.js 是什么, sort=0, gmtCreate=null, gmtModified=null)

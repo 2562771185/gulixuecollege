@@ -36,12 +36,25 @@ public class CommonResult {
         r.setMessage("操作成功");
         return r;
     }
-
+    public static CommonResult ok(String msg){
+        CommonResult r = new CommonResult();
+        r.setSuccess(true);
+        r.setCode(ResultCode.SUCCESS);
+        r.setMessage(msg);
+        return r;
+    }
     public static CommonResult error(){
         CommonResult r = new CommonResult();
         r.setSuccess(false);
         r.setCode(ResultCode.ERROR);
         r.setMessage("操作失败");
+        return r;
+    }
+    public static CommonResult error(String msg){
+        CommonResult r = new CommonResult();
+        r.setSuccess(false);
+        r.setCode(ResultCode.ERROR);
+        r.setMessage(msg);
         return r;
     }
 

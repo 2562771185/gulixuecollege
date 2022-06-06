@@ -60,7 +60,7 @@ public class EduChapterServiceImpl extends ServiceImpl<EduChapterMapper, EduChap
          */
         long count = videoService.count(new QueryWrapper<EduVideo>().eq("chapter_id", chapterId));
         if (count > 0) {
-            throw new GuliException(20001,"小节未清空");
+            throw new GuliException(20001,chapterId+"::小节未清空");
         } else {
             boolean remove = this.removeById(chapterId);
             if (remove) {

@@ -1,5 +1,6 @@
 package com.jhzz.eduservice.service;
 
+import com.jhzz.commonutils.CommonResult;
 import com.jhzz.eduservice.entity.EduVideo;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -10,4 +11,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface EduVideoService extends IService<EduVideo> {
 
+    boolean removeVideo(String courseId);
+
+    CommonResult removeVideoAndOss(String videoId);
+
+    CommonResult removeVideoByCourseId(String courseId);
 }
